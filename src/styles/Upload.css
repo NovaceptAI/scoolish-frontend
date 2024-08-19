@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2977FF;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: white;
+    color: #2977FF;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.upload-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.upload-container h2 {
+    color: #2977FF;
+}
+
+.file-upload-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.upload-option {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-option img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.upload-option p {
+    font-size: 1rem;
+    color: #2977FF;
+    font-weight: bold;
+}
+
+.upload-option span {
+    font-size: 0.875rem;
+    color: #999;
+}
+
+button {
+    background-color: #2977FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+.cta-section {
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta-section h3 {
+    color: #2977FF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #2977FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #004494;
+}
+
+footer {
+    background-color: #2977FF;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-container p, .footer-container a {
+    color: white;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.small-logo {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.medium-logo {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.url-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.url-input:focus {
+    border-color: #2977FF;
+    box-shadow: 0 2px 8px rgba(41, 119, 255, 0.2);
+    outline: none;
+}
+
+.url-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    width: 0%;
+    border-radius: 4px;
+}
