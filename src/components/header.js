@@ -15,7 +15,7 @@ function Header() {
           <li><a href="#">FAQ</a></li>
         </ul>
       </nav>
-      <a href="#" className="login-btn">Login</a>
+      <a href="/login" className="login-btn">Login</a>
     </header>
   );
 }

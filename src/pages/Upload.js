@@ -3,17 +3,47 @@ import '../styles/Upload.css';
 import uploadFile from '../scripts/upload'; // Import the JavaScript functions
 
 const Upload = () => {
-    const [fileName, setFileName] = useState('');
+    // const [fileName, setFileName] = useState('');
+    const [documentFile, setDocumentFile] = useState(null);
+    const [videoFile, setVideoFile] = useState(null);
+    const [audioFile, setAudioFile] = useState(null);
+
 
     const handleFileChange = (event) => {
-        const input = event.target;
-        if (input.files.length > 0) {
-            setFileName(input.files[0].name);
+        const { id, files } = event.target;
+        if (files.length > 0) {
+            const file = files[0];
+            switch (id) {
+                case 'doc-upload':
+                    setDocumentFile(file);
+                    break;
+                case 'video-upload':
+                    setVideoFile(file);
+                    break;
+                case 'audio-upload':
+                    setAudioFile(file);
+                    break;
+                default:
+                    break;
+            }
         }
     };
 
     const handleFormSubmit = (event) => {
-        uploadFile(event); // Call the upload function
+        event.preventDefault();
+        const formData = new FormData();
+
+        if (documentFile) {
+            formData.append('document', documentFile);
+        }
+        if (videoFile) {
+            formData.append('video', videoFile);
+        }
+        if (audioFile) {
+            formData.append('audio', audioFile);
+        }
+
+        uploadFile(formData); // Call the upload function with the prepared FormData
     };
 
     return (
@@ -39,23 +69,23 @@ const Upload = () => {
                 <div className="upload-container">
                     <h2>Upload</h2>
                     <form id="uploadForm" onSubmit={handleFormSubmit}>
-                        <input type="text" name="url" placeholder="Search Keyword for a Summarized Output from Google" className="url-input" />
-                        <div className="file-upload-options">
-                            <label>
-                                <img src="/static/upload_logo.jpg" className="upload-item" alt="Upload Document" />
-                                <input type="file" name="document" className="upload-btn" id="doc-upload" multiple accept=".pdf,.txt,.docx" onChange={handleFileChange} />
-                            </label>
-                            <label>
-                                <img src="/static/upload_video_logo.jpg" className="upload-item" alt="Upload Video" />
-                                <input type="file" name="video" className="upload-btn" id="video-upload" multiple accept="video/mp4" onChange={handleFileChange} />
-                            </label>
-                            <label>
-                                <img src="/static/upload_audio_logo.jpg" className="upload-item" alt="Upload Audio" />
-                                <input type="file" name="audio" className="upload-btn" id="audio-upload" multiple accept="audio/wav,audio/mp3" onChange={handleFileChange} />
-                            </label>
-                        </div>
-                        <button type="submit">Continue</button>
-                    </form>
+                <input type="text" name="url" placeholder="Search Keyword for a Summarized Output from Google" className="url-input" />
+                <div className="file-upload-options">
+                    <label>
+                        <img src="/static/upload_logo.jpg" className="upload-item" alt="Upload Document" />
+                        <input type="file" className="upload-btn" id="doc-upload" multiple accept=".pdf,.txt,.docx" onChange={handleFileChange} />
+                    </label>
+                    <label>
+                        <img src="/static/upload_video_logo.jpg" className="upload-item" alt="Upload Video" />
+                        <input type="file" className="upload-btn" id="video-upload" multiple accept="video/mp4" onChange={handleFileChange} />
+                    </label>
+                    <label>
+                        <img src="/static/upload_audio_logo.jpg" className="upload-item" alt="Upload Audio" />
+                        <input type="file" className="upload-btn" id="audio-upload" multiple accept="audio/wav,audio/mp3" onChange={handleFileChange} />
+                    </label>
+                </div>
+                <button type="submit">Continue</button>
+            </form>
                 </div>
 
                 <section className="cta-section">

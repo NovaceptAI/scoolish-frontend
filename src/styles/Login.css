@@ -1,0 +1,170 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.login-body, .login-html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    display: flex;
+    animation: fadeIn 1s ease-out;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;  /* Adjust height as needed to make it look good */
+    width: 100%;
+    max-width: 1200px; /* Or whatever max width you prefer */
+    margin: auto; /* Centers the container if width is less than 100% */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f0f2f5; /* Keeps the background consistent */
+}
+
+
+.login-left-panel {
+    flex: 1;
+    background: linear-gradient(to bottom, #2977FF, #00a3e0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-left-panel h1,
+.login-left-panel h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-left-panel h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.login-left-panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.login-right-panel {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-right-panel h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.login-form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+.login-form-group input {
+    transition: box-shadow 0.3s, border-color 0.3s;
+    /* existing styles */
+}
+
+.login-form-group input:focus {
+    border-color: #0056b3; /* Highlight the input border on focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5); /* Soft glow effect */
+}
+
+
+.login-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}s
+
+/* .login-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #004494, #00a3e0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+} */
+
+.login-btn:hover {
+    background: linear-gradient(to right, #003f82, #008ccc);
+}
+
+.login-signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-signup-link a {
+    color: #00a3e0;
+    text-decoration: none;
+}
+
+.login-signup-link a:hover {
+    text-decoration: underline;
+}
+
+.login-error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-left-panel, .login-right-panel {
+        width: 100%;
+    }
+
+    .login-left-panel img {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .login-left-panel h1 {
+        font-size: 3rem;
+    }
+
+    .login-left-panel h2 {
+        font-size: 18px;
+    }
+
+    .login-right-panel {
+        padding: 20px;
+    }
+}
