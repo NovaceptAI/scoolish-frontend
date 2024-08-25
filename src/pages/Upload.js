@@ -73,7 +73,7 @@ const Upload = () => {
                 <div className="file-upload-options">
                     <label>
                         <img src="/static/upload_logo.jpg" className="upload-item" alt="Upload Document" />
-                        <input type="file" className="upload-btn" id="doc-upload" multiple accept=".pdf,.txt,.docx" onChange={handleFileChange} />
+                        <input type="file" className="upload-btn" id="doc-upload" multiple accept=".pdf,.txt,.docx,.jpg,.jpeg,.png" onChange={handleFileChange} />
                     </label>
                     <label>
                         <img src="/static/upload_video_logo.jpg" className="upload-item" alt="Upload Video" />
