@@ -5,7 +5,12 @@ const uploadFile = (formData) => {
     xhr.onload = function () {
         if (xhr.status === 200) {
             const result = JSON.parse(xhr.responseText);
-            window.location.href = `/select_pages_features?ids=${result.document_ids.join(',')}`;
+            
+            // Prepare query params by encoding the document info
+            const documentInfo = encodeURIComponent(JSON.stringify(result.documents)); // Assuming 'documents' contains the entire document info
+            
+            // Redirect to the page and pass the document info
+            window.location.href = `/select_pages_features?documents=${documentInfo}`;
         } else {
             alert('Failed to upload documents.');
         }

@@ -1,0 +1,126 @@
+.segmentation-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.header {
+    background-color: #007bff;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segmentation-container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.document-preview {
+    flex: 0.3;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.document-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.segmentation-output {
+    flex: 0.7;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.segment-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.segment-btn.active {
+    background-color: #0056b3;
+}
+
+.segment-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.segmentation-text {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.copy-btn {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #007bff;
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+}

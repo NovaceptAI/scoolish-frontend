@@ -62,10 +62,13 @@ body {
     padding: 50px 20px;
   }
   
-  .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+.footer {
+    background-color: #007bff;
     color: white;
-  }
+    padding: 20px;
+    text-align: right;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
   

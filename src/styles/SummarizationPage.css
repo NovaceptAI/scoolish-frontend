@@ -1,0 +1,90 @@
+.summarization-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.header {
+    background-color: #007bff;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summarization-container {
+    width: 60%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.summarization-container:hover {
+    transform: scale(1.02);
+}
+
+.document-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.search-input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 220px;
+    margin-left: 1rem;
+}
+
+.summarization-text {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.copy-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #007bff;
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+}
