@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles.css';
+
 function Header() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <header className="header-container">
-      <img src="/static/scoolish-menu-bar.jpg" alt="Schoolish Logo" className="logo" />
+    <header
+      className="header-container" >
+      <img className='logo' src="/static/scoolish_logo2.jpg" alt="File Preview" />
       <nav>
         <ul>
           <li><a href="/">Home</a></li>

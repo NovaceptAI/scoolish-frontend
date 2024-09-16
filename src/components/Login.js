@@ -19,7 +19,7 @@ function Login() {
         event.preventDefault();
         const form = event.target;
         const data = new FormData(form);
-        const url = isLogin ? 'http://192.168.1.5:5000/auth/login' : 'http://192.168.1.5:5000/auth/signup';
+        const url = isLogin ? 'http://20.127.228.226/auth/login' : 'http://20.127.228.226/auth/signup';
 
         fetch(url, {
             method: 'POST',

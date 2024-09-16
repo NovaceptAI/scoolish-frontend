@@ -44,7 +44,7 @@
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -58,7 +58,7 @@
 .diamond .feature-node,
 .square .feature-node {
     position: absolute;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     padding: 15px 20px; /* Adjust padding to make the text and checkbox fit properly */
     border-radius: 10px;
@@ -81,7 +81,7 @@
 
 /* .circle .feature-node {
     position: absolute;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     padding: 50px 50px;
     border-radius: 50px;
@@ -117,7 +117,7 @@
 
 /* .diamond .feature-node {
     position: absolute;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     padding: 50px 50px;
     border-radius: 50px;
@@ -153,7 +153,7 @@
 
 /* .square .feature-node {
     position: absolute;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     padding: 50px 50px;
     border-radius: 50px;
@@ -265,7 +265,7 @@
 .dropdown-container button {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     border: none;
     border-radius: 4px;
@@ -293,7 +293,7 @@
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     border: none;
     border-radius: 5px;

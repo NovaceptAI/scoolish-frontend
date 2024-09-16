@@ -69,7 +69,7 @@ function MindMapPage() {
             };
 
             // Send a POST request to the endpoint
-            fetch('http://192.168.1.5:5000/documents/analyze_models', {
+            fetch('http://20.127.228.226/documents/analyze_models', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

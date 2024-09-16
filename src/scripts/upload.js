@@ -1,6 +1,6 @@
 const uploadFile = (formData) => {
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://192.168.1.5:5000/documents/upload', true);
+    xhr.open('POST', 'http://20.127.228.226/documents/upload', true);
 
     xhr.onload = function () {
         if (xhr.status === 200) {

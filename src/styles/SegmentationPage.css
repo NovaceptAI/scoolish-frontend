@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-color: #007bff;
+    background-color: #eaeaea;
     padding: 1.5rem;
     text-align: center;
     color: white;
@@ -65,7 +65,7 @@
 }
 
 .segment-btn {
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -103,7 +103,7 @@
 
 .copy-btn {
     padding: 0.75rem 2rem;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     border: none;
     border-radius: 6px;
@@ -116,11 +116,3 @@
     transform: scale(1.05);
 }
 
-.footer {
-    background-color: #007bff;
-    text-align: center;
-    padding: 1.5rem;
-    color: white;
-    font-size: 1rem;
-    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
-}

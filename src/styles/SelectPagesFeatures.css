@@ -4,15 +4,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* 
 .login-btn {
     background-color: white;
-    color: #2977FF;
+    color: black;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 .process-container {
     background-color: white;
@@ -25,19 +25,19 @@ body {
 
 .process-container h2 {
     font-size: 22px;
-    color: #2977FF;
+    color: #eaeaea;
 }
 
 .back-btn {
     display: block;
     margin-bottom: 20px;
-    color: #2977FF;
+    color: #eaeaea;
     text-decoration: none;
     font-weight: bold;
 }
 
 .file-preview {
-    border: 2px dashed #2977FF;
+    border: 2px dashed #eaeaea;
     padding: 20px;
     text-align: center;
     margin-bottom: 30px;
@@ -52,11 +52,11 @@ body {
 
 .page-selection label, .page-selection select, .add-more-btn {
     font-size: 16px;
-    color: #2977FF;
+    color: #eaeaea;
 }
 
 .add-more-btn {
-    background-color: #2977FF;
+    background-color: #eaeaea;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -89,7 +89,7 @@ body {
 .feature p {
     font-size: 16px;
     font-weight: bold;
-    color: #2977FF;
+    color: #eaeaea;
 }
 
 .feature select {
@@ -103,7 +103,7 @@ body {
 .start-process-btn {
     display: block;
     width: 100%;
-    background-color: #2977FF;
+    background-color: #eaeaea;
     color: white;
     padding: 15px;
     border: none;
@@ -116,7 +116,7 @@ body {
 
 
 .book-demo-btn {
-    background-color: #2977FF;
+    background-color: #eaeaea;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -126,10 +126,10 @@ body {
     margin-top: 20px;
 }
 
-.logo {
+/* .logo {
     height: 50px;
     width: auto;
-}
+} */
 
 .file-preview-page {
     display: flex;
@@ -176,7 +176,7 @@ body {
 
 .submit-btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #eaeaea;
     color: white;
     border: none;
     border-radius: 5px;

@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #2977FF;
+    background-color: #eaeaea;
     padding: 10px 20px;
 }
 
@@ -39,13 +39,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-.login-btn {
+/* .login-btn {
     background-color: white;
-    color: #2977FF;
+    color: black;
     padding: 5px 15px;
     border-radius: 5px;
     text-decoration: none;
-}
+} */
 
 .upload-container {
     max-width: 1200px;
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 .upload-container h2 {
-    color: #2977FF;
+    color: #eaeaea;
 }
 
 .file-upload-options {
@@ -83,7 +83,7 @@ nav ul li a {
 
 .upload-option p {
     font-size: 1rem;
-    color: #2977FF;
+    color: #eaeaea;
     font-weight: bold;
 }
 
@@ -92,85 +92,11 @@ nav ul li a {
     color: #999;
 }
 
-button {
-    background-color: #2977FF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
 button:hover {
-    background-color: #004494;
+    background-color: #eaeaea;
 }
 
-.cta-section {
-    background-color: #f4f4f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.cta-section h3 {
-    color: #2977FF;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.cta-section p {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #2977FF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.cta-button:hover {
-    background-color: #004494;
-}
-
-footer {
-    background-color: #2977FF;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-container h4 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.footer-container p, .footer-container a {
-    color: white;
-    font-size: 0.875rem;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-}
 
 .small-logo {
     width: 24px;
@@ -196,7 +122,7 @@ footer {
 }
 
 .url-input:focus {
-    border-color: #2977FF;
+    border-color: #eaeaea;
     box-shadow: 0 2px 8px rgba(41, 119, 255, 0.2);
     outline: none;
 }

@@ -1,60 +1,77 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-  }
+  } */
   
   .header-container {
-    display: flex;
+    display: absolute;
     justify-content: space-between;
     align-items: center;
-    background-color: #2977FF;
     padding: 20px;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  .header-container nav ul {
+    background-color: transparent; /* Default transparent background */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.header-container.hovered {
+    background-color: #eaeaea; /* Change to your desired background color when hovering */
+}
+
+.header-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    right: 40%; /* Move it inward from the right */
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    color: rgb(4, 4, 4);
+}
+
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+/* .header-container nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .header-container nav ul li {
+} */
+
+/* .header-container nav ul li {
     display: inline;
-  }
+} */
+
+.header-container nav ul li a {
+    color: rgb(4, 4, 4);
+    font-size: 20px;
+    padding: 10px 15px;
+}
   
-  .header-container nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .login-btn {
-    background-color: white;
-    color: #2977FF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
+.login-btn {
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
   
   .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #2977FF;
-    color: white;
+    background-color: #eaeaea;
+    color: rgb(6, 6, 6);
   }
   
-  .hero .cta-buttons a {
+  .hero .cta-buttons {
     margin: 10px;
     padding: 15px 30px;
     text-decoration: none;
     color: white;
-    background-color: #0056b3;
+    background-color: #eaeaea;
     border-radius: 5px;
   }
   
@@ -62,13 +79,113 @@ body {
     padding: 50px 20px;
   }
   
-.footer {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: right;
+  .footer {
+    background-color: black;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
-}
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-section ul li a:hover {
+    color: black;
+  }
+  
+  .footer p {
+    color: black;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .social-links {
+    margin-top: 15px;
+  }
+  
+  .small-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .small-logo:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Fade-in animation for the entire footer */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in from the bottom animation for the text */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+/* .footer {
+  background-color: #eaeaea;
+  color: black;
+  padding: 20px;
+  text-align: right;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} */
   
