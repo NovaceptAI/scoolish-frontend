@@ -1,9 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Particles from 'react-tsparticles'; // Import the particles library
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/bundle';
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import '../styles/Home.css';
 
+
 function Home() {
+  const blogs = [
+      {
+        title: "Blog 1",
+        image: "public/static/keyword_cloud.jpg",
+        description: "This is a short description for Blog 1.",
+      },
+      {
+        title: "Blog 2",
+        image: "public/static/similarity_matrix.jpg",
+        description: "This is a short description for Blog 2.",
+      },
+      {
+        title: "Blog 3",
+        image: "public/static/students_studying1.jpg",
+        description: "This is a short description for Blog 3.",
+      },
+    ];
+
+    // return (
+    //   <div className="blog-carousel">
+    //     {blogs.map((blog, index) => (
+    //       <div key={index} className="blog-item">
+    //         <img src={blog.image} alt={blog.title} />
+    //         <h3>{blog.title}</h3>
+    //         <p>{blog.description}</p>
+    //       </div>
+    //     ))}
+    //   </div>
+    // );
+
   // Particle configuration options
   const particlesOptions = {
     particles: {
@@ -11,55 +46,56 @@ function Home() {
         value: 60,
         density: {
           enable: true,
-          value_area: 800
-        }
+          value_area: 800,
+        },
       },
       color: {
-        value: "#00aaff"
+        value: "#00aaff",
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#000000"
-        }
+          color: "#000000",
+        },
       },
       opacity: {
         value: 0.5,
-        random: true
+        random: true,
       },
       size: {
         value: 3,
-        random: true
+        random: true,
       },
       line_linked: {
         enable: true,
         distance: 150,
         color: "#00aaff",
         opacity: 0.4,
-        width: 1
+        width: 1,
       },
       move: {
         enable: true,
         speed: 6,
-        direction: "none"
-      }
+        direction: "none",
+      },
     },
     interactivity: {
       detect_on: "canvas",
       events: {
         onhover: {
           enable: true,
-          mode: "grab"
+          mode: "grab",
         },
         onclick: {
           enable: true,
-          mode: "push"
-        }
-      }
+          mode: "push",
+        },
+      },
     },
-    retina_detect: true
+    retina_detect: true,
   };
+
 
   return (
     <div>
@@ -78,7 +114,7 @@ function Home() {
           
         </div>
         <div className="cta-buttons">
-            <Link to="/upload" className="btn primary-btn">Try Scoolish</Link>
+            <Link to="/login" className="btn primary-btn">Try Scoolish</Link>
             <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
           </div>
         
@@ -146,56 +182,57 @@ function Home() {
     <br></br>
 
      {/* Fun Facts Section */}
-     <section className="fun-facts-section">
+    <section className="fun-facts-section">
         {/* Particles effect for this section */}
         <Particles className="particles-js" options={particlesOptions} />
         <div className="fun-facts-container">
           <h2>Did You Know?</h2>
           <p>AI-powered learning tools can boost student engagement by up to 60% by providing personalized learning experiences.</p>
         </div>
-      </section>
+    </section>
 
 
 
     <section className="special-features">
-  <h2>Scoolish Smart Learning AIDS</h2>
-  <div className="special-features-grid">
-    <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
-    <div className="feature-text">
-      <h3>Story to Comics Converter</h3>
-      <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
-      <p>Write a story and watch it come to life as a comic strip.</p>
-    </div>
-    <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
-    <div className="feature-text">
-      <h3>AI-Powered Homework Helper</h3>
-      <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
-      <p>Get help with assignments and understand concepts easily.</p>
-    </div>
-    <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
-    <div className="feature-text">
-      <h3>Virtual Science Lab</h3>
-      <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
-      <p>Perform experiments in a safe, virtual environment.</p>
-    </div>
-    <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
-    <div className="feature-text">
-      <h3>AI Writing Assistant for Essays</h3>
-      <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
-      <p>Receive essay writing help and feedback with AI.</p>
-    </div>
-    <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
-  </div>
-</section>
+      <h2>Scoolish Smart Learning AIDS</h2>
+      <div className="special-features-grid">
+        <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
+        <div className="feature-text">
+          <h3>Story to Comics Converter</h3>
+          <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
+          <p>Write a story and watch it come to life as a comic strip.</p>
+        </div>
+        <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
+        <div className="feature-text">
+          <h3>AI-Powered Homework Helper</h3>
+          <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
+          <p>Get help with assignments and understand concepts easily.</p>
+        </div>
+        <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
+        <div className="feature-text">
+          <h3>Virtual Science Lab</h3>
+          <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
+          <p>Perform experiments in a safe, virtual environment.</p>
+        </div>
+        <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
+        <div className="feature-text">
+          <h3>AI Writing Assistant for Essays</h3>
+          <a href="#learn-more-section" className="btn secondary-btn">Learn More</a>
+          <p>Receive essay writing help and feedback with AI.</p>
+        </div>
+        <div className="special-feature-item animate-feature" style={{ backgroundImage: 'url(/static/entity.webp)' }}></div>
+      </div>
+    </section>
 
 
       <section className="cta-section">
         <h2>Ready to Get Started?</h2>
-        <p>Upload your document, audio, or video now and let our AI do the rest.</p>
-        <Link to="/upload" className="btn primary-btn">Upload Now</Link>
+        <p>Login and Upload your document, audio, or video now and let our AI do the rest.</p>
+        <Link to="/login" className="btn primary-btn">Login or Sign Up Now</Link>
       </section>
     </div>
   );
+
 }
 
 export default Home;

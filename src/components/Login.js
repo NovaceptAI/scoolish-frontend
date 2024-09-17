@@ -41,7 +41,7 @@ function Login() {
     return (
         <div className="login-container">
             <div className="login-left-panel">
-                <img src="/static/scoolish.jpg" alt="Schoolish Logo" className="logo" />
+                <img src="/static/scoolish_logo2.jpg" alt="Schoolish Logo" className="logo" />
                 <img src="/static/students_studying.jpg" alt="Analysis Image" />
             </div>
             <div className="login-right-panel">
