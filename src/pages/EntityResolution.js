@@ -1,43 +1,41 @@
 import React from 'react';
-import '../styles/EntityResolutionPage.css'; // Assuming this CSS file exists
+import { useLocation } from 'react-router-dom';
+import '../styles/EntityResolutionPage.css'; // Ensure this CSS file exists
 
 function EntityResolutionPage() {
-    // Dummy data for entities and their resolution
-    const entities = [
-        { type: "Person", original: "J. Smith", resolved: "John Smith" },
-        { type: "Company", original: "IBM Corp.", resolved: "IBM Corporation" },
-        { type: "Location", original: "NYC", resolved: "New York City" },
-        { type: "Date", original: "10/12/21", resolved: "October 12, 2021" },
-        { type: "Product", original: "iPhone", resolved: "Apple iPhone 12" }
-    ];
+    const location = useLocation();
+
+    // Get the passed state from the previous page
+    const { data } = location.state || {}; // Assuming 'data' contains the response
+    const filename = data ? Object.keys(data)[0] : 'Unknown'; // Get the filename
+    const entityResolutionText = data ? data[filename].entity_resolution : 'No entity resolution data available';
+
+    // Helper function to format the entity resolution text
+    const formatEntityResolutionText = (text) => {
+        return text.split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+        ));
+    };
 
     return (
         <div className="entity-resolution-page">
-            <div className="document-section">
-                <img src="/static/test_23.jpg" alt="Document Preview" />
-                <p>Document: Business Contract</p>
-            </div>
-            <div className="entities-section">
-                <h3>Resolved Entities</h3>
-                <table className="entities-table">
-                    <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Original</th>
-                            <th>Resolved</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {entities.map((entity, index) => (
-                            <tr key={index}>
-                                <td>{entity.type}</td>
-                                <td>{entity.original}</td>
-                                <td>{entity.resolved}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+            <header className="header">
+                <h1>Entity Resolution</h1>
+            </header>
+
+            <main className="content">
+                <div className="document-section">
+                    <p><strong>Document Title:</strong> {filename}</p>
+                </div>
+
+                <div className="entities-section">
+                    <h3>Resolved Entities</h3>
+                    <div className="entity-resolution-text">
+                        {/* Render the entity resolution text */}
+                        {formatEntityResolutionText(entityResolutionText)}
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }

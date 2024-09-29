@@ -192,7 +192,6 @@ function Home() {
     </section>
 
 
-
     <section className="special-features">
       <h2>Scoolish Smart Learning AIDS</h2>
       <div className="special-features-grid">

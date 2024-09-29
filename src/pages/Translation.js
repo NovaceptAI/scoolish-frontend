@@ -1,11 +1,19 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom'; // To get the passed state
 import '../styles/TranslationPage.css'; // Ensure you have this CSS file
 
 function TranslationPage() {
+    const location = useLocation();
+
+    // Get the passed state from the previous page
+    const { data } = location.state || {}; // Assuming 'data' contains the response
+    const filename = data ? Object.keys(data)[0] : 'Unknown'; // Get the filename
+    const translationText = data ? data[filename].translation : 'No translation available'; // Get the translation text
+
     return (
         <div className="translation-page">
             {/* Header */}
-            <header className="header">
+            <header className="translationheader">
                 <h1>Translation</h1>
             </header>
 
@@ -15,34 +23,26 @@ function TranslationPage() {
                     {/* Source Language and Content */}
                     <div className="source-content">
                         <div className="language-indicator">
-                            <h3>English</h3>
+                            <h3>Source Language</h3>
                         </div>
-                        {/* Placeholder for original content (image, video, audio, document) */}
+                        {/* Placeholder for original content */}
                         <div className="file-preview">
-                            <img src="/static/test_23.jpg" alt="Original Document Preview" />
-                            <p>Document Title: Sample.pdf</p>
+                            <p><strong>Document Title:</strong> {filename}</p>
                         </div>
                     </div>
 
                     {/* Translated Language and Content */}
                     <div className="translated-content">
                         <div className="language-indicator">
-                            <h3>Hindi</h3>
+                            <h3>Converted Language</h3>
                         </div>
                         <div className="translated-text">
-                            <p>
-                            Google की निःशुल्क सेवा, अंग्रेजी और 100 से अधिक अन्य भाषाओं के बीच शब्दों, वाक्यांशों और वेब पेजों का तुरंत अनुवाद करती है।
-                            </p>
+                            <p>{translationText}</p>
                             <button className="copy-btn">Copy Translated Text</button>
                         </div>
                     </div>
                 </div>
             </main>
-
-            {/* Footer */}
-            <footer className="footer">
-                <p>&copy; 2024 My Company. All Rights Reserved.</p>
-            </footer>
         </div>
     );
 }

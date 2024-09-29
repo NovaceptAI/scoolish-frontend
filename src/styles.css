@@ -125,7 +125,7 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight shadow on active */
   }
   
-
+  
   .btn {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -137,12 +137,13 @@
     display: inline-block;
     text-align: center;
     text-decoration: none; /* Remove underline for links */
+    color: black;
   }
   
   /* Primary Button */
   .primary-btn {
     background-color: #007bff; /* Primary blue */
-    color: white;
+    color: black;
   }
   
   .primary-btn:hover {
@@ -157,44 +158,51 @@
   
   /* Secondary Button */
   .secondary-btn {
-    background-color: #f8f8f8; /* Light gray background */
-    color: #333; /* Darker text color */
+    background-color: #eaeaea; /* Light gray background */
+    color: black; /* Darker text color */
   }
   
   .secondary-btn:hover {
-    background-color: #e0e0e0; /* Darker gray on hover */
+    background-color: black; /* Darker gray on hover */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
   }
   
   .secondary-btn:active {
-    background-color: #cfcfcf; /* Even darker gray on active */
+    background-color: black; /* Even darker gray on active */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight shadow on active */
   }
   
   
-  .footer {
-    background-color: black;
-    color: black;
-    padding: 40px 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section {
-    flex: 1;
-    padding: 20px;
-    min-width: 250px;
-  }
+ /* Footer styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 25%; /* Distribute footer sections evenly */
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
   
   .footer-section h4 {
     font-size: 18px;
@@ -209,9 +217,7 @@
   }
   
   .footer-section ul li a {
-    text-decoration: none;
     color: black;
-    transition: color 0.3s ease-in-out;
   }
   
   .footer-section ul li a:hover {

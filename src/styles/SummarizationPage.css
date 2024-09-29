@@ -5,16 +5,22 @@
     justify-content: space-between;
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
+    color: black;
 }
 
-.header {
+.summarizationheader {
     background-color: #eaeaea;
     padding: 1.5rem;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 2rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     font-weight: 600;
+}
+
+.summarizationheader h1 {
+    color: black;
+    font-size: 1.5rem;
 }
 
 .content {

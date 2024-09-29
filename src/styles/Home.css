@@ -139,12 +139,6 @@ color: black; /* Lighter text color for the description */
 margin: 0;
 }
 
-.feature-text a {
-font-size: 14px;
-color: white; /* Lighter text color for the description */
-margin: 0;
-}
-
 
 /* .feature-background {
   position: relative;
@@ -209,18 +203,28 @@ margin: 0;
 
 .special-features {
   background-color: #1a1a1a; /* Black background */
-  color: white;
   padding: 50px 20px;
   text-align: center;
 }
 
 .special-features p{
+  margin-top: 20px;
+  font-size: 1rem;
   color: white;
 }
 
 .special-features h2 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 40px;
+  position: relative;
+  animation: slide-in 1s ease-out; /* Animation for the heading */
+}
+
+.special-features h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   position: relative;
   animation: slide-in 1s ease-out; /* Animation for the heading */
 }

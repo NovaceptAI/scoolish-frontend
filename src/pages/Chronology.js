@@ -1,31 +1,45 @@
-import React, { useState } from 'react';
-import '../styles/ChronologyPage.css'; // Assuming this CSS file exists
+import React from 'react';
+import { useLocation } from 'react-router-dom'; // To get the passed state
+import '../styles/ChronologyPage.css'; // Ensure you have this CSS file
 
 function ChronologyPage() {
-    // Dummy data for events in the document
-    const events = [
-        { date: "12th Jan 2000", event: "Company founded", page: 2 },
-        { date: "15th Mar 2005", event: "First product launched", page: 5 },
-        { date: "21st Sep 2010", event: "Expanded to new markets", page: 8 },
-        { date: "10th Nov 2015", event: "Major acquisition", page: 12 },
-        { date: "30th Jun 2020", event: "Global reach achieved", page: 20 }
-    ];
+    const location = useLocation();
+
+    // Get the passed state from the previous page
+    const { data } = location.state || {}; // Assuming 'data' contains the response
+    const filename = data ? Object.keys(data)[0] : 'Unknown'; // Extract the filename
+    const chronologyText = data ? data[filename].chronology : 'No chronology data available';
+
+    // Helper function to format the chronology text into paragraphs
+    const formatChronologyText = (text) => {
+        return text.split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+        ));
+    };
 
     return (
         <div className="chronology-page">
-            <div className="document-section">
-                <img src="/static/test_23.jpg" alt="Document Preview" />
-                <p>Document: Annual Report</p>
-            </div>
-            <div className="events-timeline">
-                <h3>Chronology of Events</h3>
-                {events.map((event, index) => (
-                    <div key={index} className="event-item">
-                        <p><strong>{event.date}</strong> - {event.event}</p>
-                        <p>Page: {event.page}</p>
+            {/* Header */}
+            <header className="header">
+                <h1>Chronology of Events</h1>
+            </header>
+
+            {/* Main Content */}
+            <main className="content">
+                <div className="chronology-container">
+                    <div className="document-info">
+                        <p><strong>Document Title:</strong> {filename}</p> {/* Display the document title */}
                     </div>
-                ))}
-            </div>
+
+                    <div className="chronology-events">
+                        <h3>Events in Chronological Order</h3>
+                        <div className="chronology-text">
+                            {/* Render the formatted chronology text */}
+                            {formatChronologyText(chronologyText)}
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }

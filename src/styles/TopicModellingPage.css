@@ -1,16 +1,16 @@
 .topic-modeling-page {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
+    height: 110vh;
     font-family: Arial, sans-serif;
 }
 
-.header {
+.topicheader {
     background-color: #eaeaea;
     padding: 1rem;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
 }
 
 .content {
@@ -29,28 +29,32 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .document-preview {
     flex: 1;
     padding: 1rem;
+    border-right: 1px solid #eaeaea;
 }
 
-.document-preview img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.document-preview p {
+    font-weight: bold;
 }
 
 .topic-analysis {
     flex: 2;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .topic-stats {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .search-bar {
@@ -67,57 +71,29 @@
 }
 
 .topics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
     margin-bottom: 2rem;
 }
 
-.topic-item {
-    background-color: #e3f2fd;
+.formatted-text {
+    white-space: pre-wrap;
+    line-height: 1.6;
     padding: 1rem;
+    background-color: #ffffff;
     border-radius: 8px;
-    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formatted-text strong {
+    color: #1976d2;
     font-weight: bold;
 }
 
-.topic-item .topic-label {
-    display: block;
-    font-size: 1rem;
-}
-
-.topic-item .topic-count {
-    color: #eaeaea;
-    font-size: 1.2rem;
-}
-
-.topic-chart {
+.footer {
+    padding: 1rem;
+    background-color: #eaeaea;
     text-align: center;
-    margin-bottom: 2rem;
 }
-
-.topic-chart img {
-    width: 100%;
-    height: auto;
-}
-
-.stat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.stat-bar {
-    width: 70%;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-left: 1rem;
-}
-
-.stat-fill {
-    height: 100%;
-}
-

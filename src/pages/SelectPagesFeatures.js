@@ -53,7 +53,7 @@ function SelectPagesFeatures() {
                     <p>No documents available for preview.</p>
                 )}
                 <form onSubmit={handleSubmit}>
-                    <button type="submit" >Go to Mind Map</button>
+                    <button className='btn primanry-btn' type="submit" >Go to Mind Map</button>
                 </form>
                 
             </div>

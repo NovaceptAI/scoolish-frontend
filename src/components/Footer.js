@@ -26,11 +26,10 @@ function Footer() {
     <div className="footer-section">
       <h4>Our Services</h4>
       <ul>
-        <li><a href="#">Document analysis</a></li>
-        <li><a href="#">Document stacking</a></li>
-        <li><a href="#">Audio analysis</a></li>
+        <li><a href="#">School Integration</a></li>
+        <li><a href="#">Professional Integration</a></li>
+        <li><a href="#">API Services</a></li>
         <li><a href="#">Video analysis</a></li>
-        <li><a href="#">Optical Character Recognition</a></li>
       </ul>
     </div>
     <div className="footer-section">
