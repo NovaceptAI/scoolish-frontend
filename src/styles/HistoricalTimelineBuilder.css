@@ -1,0 +1,74 @@
+.timeline-builder-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.timeline-name-input,
+.event-inputs {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.timeline-preview {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.timeline-preview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline-preview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-preview li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.timeline-preview li strong {
+    color: #000;
+}

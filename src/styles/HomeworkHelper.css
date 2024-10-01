@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.homework-helper-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.homework-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.homework-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: none;
+    background-color: #fafafa;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.option label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.option select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.upload-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.upload-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+.camera-toggle-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toggle-camera-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-camera-btn:hover {
+    background-color: #0069d9;
+}
+
+.camera-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.camera-view {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.capture-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.capture-btn:hover {
+    background-color: #45a049;
+}
+
+.submit-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.results-section {
+    margin-top: 30px;
+}
+
+.hints-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hints-list li {
+    padding: 10px 0;
+}
+
+h2 {
+    color: #333;
+}

@@ -1,0 +1,82 @@
+.comic-strip-builder-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .panel-builder {
+    margin-bottom: 30px;
+  }
+  
+  .panel-builder label {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .panel-builder select, .panel-builder input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  
+  .panel-builder button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .panel-builder button:hover {
+    background-color: #218838;
+  }
+  
+  .comic-preview {
+    margin-top: 20px;
+  }
+  
+  .comic-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .comic-panel {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .save-options {
+    margin-top: 20px;
+  }
+  
+  .save-options button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-options button:hover {
+    background-color: #0056b3;
+  }
+  

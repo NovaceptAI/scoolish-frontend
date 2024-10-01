@@ -1,0 +1,76 @@
+.math-visualizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .problem-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .problem-input form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .problem-input input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .solution-steps {
+    margin-top: 30px;
+  }
+  
+  .solution-steps ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .solution-steps ul li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .graph {
+    margin-top: 30px;
+    width: 80%;
+  }
+  
+  .math-equation {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+  

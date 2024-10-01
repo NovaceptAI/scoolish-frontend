@@ -1,0 +1,68 @@
+.creative-writing-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.prompt-box, .writing-box, .feedback-box {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.prompt-box p {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.feedback-box {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #26a69a;
+}
+
+.feedback-box h3 {
+    margin-top: 0;
+}
+
+.feedback-box p {
+    font-size: 16px;
+    color: #00796b;
+}

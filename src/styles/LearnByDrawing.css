@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .learn-by-drawing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .toolbox {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .toolbox label {
+    font-size: 1.2rem;
+  }
+  
+  .toolbox button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .toolbox button:hover {
+    background-color: #45a049;
+  }
+  
+  .canvas-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  canvas {
+    border: 2px solid #ccc;
+    background-color: white;
+  }
+  
+  .feedback-section {
+    margin-top: 20px;
+  }
+  
+  .feedback-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback-section button:hover {
+    background-color: #e64a19;
+  }
+  
+  .feedback-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  

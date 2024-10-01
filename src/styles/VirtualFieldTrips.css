@@ -1,0 +1,81 @@
+.virtual-field-trips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: #333; /* Lighter text color */
+    border-bottom: 2px solid #ccc; /* Add a subtle border */
+  }
+  
+  .trip-setup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .start-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .start-btn:disabled {
+    background-color: #bbb;
+  }
+  
+  .start-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .trip-viewer {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  
+  .trip-viewer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .trip-info {
+    background-color: #f4f4f9;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd; /* Subtle border */
+  }
+  

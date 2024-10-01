@@ -18,6 +18,24 @@ import TranslationPage from './pages/Translation';
 import ChronologyPage from './pages/Chronology';
 import EntityResolutionPage from './pages/EntityResolution';
 import StoryToComics from './components/StoryToComics';
+import HomeworkHelper from './components/HomeworkHelper';
+import QuizCreator from './components/QuizCreator';
+import VirtualScienceLab from './components/VirtualScienceLab';
+import WritingAssistant from './components/WritingAssistant';
+import LearnByDrawing from './components/LearnByDrawing';
+import DigitalDebatePlatform from './components/DigitalDebate';
+import ModelBuilder from './components/3DModelBuilder';
+import LanguageLearningGames from './components/LanguageLearningGames';
+import VirtualFieldTrips from './components/VirtualFieldTrips';
+import CollaborativeMindMappingTool from './components/CollaborativeMindMappingTool';
+import MathProblemVisualizer from './components/MathProblemVisualizer';
+import CreativeWritingPrompts from './components/CreativeWritingPrompts';
+import HistoricalTimelineBuilder from './components/HistoricalTimelineBuilder';
+import VisualStudyGuideMaker from './components/VisualStudyGuideMaker';
+import CodePlayground from './components/CodePlayground';
+import MusicToStudyBy from './components/MusicToStudyBy';
+import ComicStripBuilder from './components/ComicStripBuilder';
+
 
 function App() {
   return (
@@ -40,6 +58,23 @@ function App() {
           <Route path="/chronology" element={<ChronologyPage />} />
           <Route path="/entityResolution" element={<EntityResolutionPage />} />
           <Route path="/story-to-comics" element={<StoryToComics />} />
+          <Route path="/homework-helper" element={<HomeworkHelper />} />
+          <Route path="/quiz-creator" element={<QuizCreator />} />    
+          <Route path="/virtual-science-lab" element={<VirtualScienceLab />} />   
+          <Route path="/writing-assistant" element={<WritingAssistant />} />  
+          <Route path="/learn-by-drawing" element={<LearnByDrawing />} />  
+          <Route path="/digital-debate" element={<DigitalDebatePlatform />} />   
+          <Route path="/3d-model-builder" element={<ModelBuilder />} />      
+          <Route path="/language-learning-games" element={<LanguageLearningGames />} />     
+          <Route path="/virtual-field-trips" element={<VirtualFieldTrips />} />          
+          <Route path="/collaborative-mind-mapping" element={<CollaborativeMindMappingTool />} />   
+          <Route path="/math-problem-visualizer" element={<MathProblemVisualizer />} />         
+          <Route path="/creative-writing-prompts" element={<CreativeWritingPrompts />} />      
+          <Route path="/historical-timeline-builder" element={<HistoricalTimelineBuilder />} />  
+          <Route path="/visual-study-guide-maker" element={<VisualStudyGuideMaker />} />     
+          <Route path="/code-playground-for-kids" element={<CodePlayground />} />       
+          <Route path="/music-to-study-by" element={<MusicToStudyBy />} />        
+          <Route path="/interactive-comic-strip-builder" element={<ComicStripBuilder />} />               
           <Route path="/login" element={<Login />} />   
         </Routes>
       </div>

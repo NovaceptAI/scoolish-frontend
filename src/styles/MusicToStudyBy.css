@@ -1,0 +1,81 @@
+.music-study-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .music-controls {
+    margin-bottom: 20px;
+  }
+  
+  .music-controls label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .music-controls select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .music-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .music-controls button:hover {
+    background-color: #218838;
+  }
+  
+  .playlist-container {
+    margin-top: 20px;
+  }
+  
+  .playlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .playlist-item {
+    background-color: #e7f3ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .playlist-item button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .playlist-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .music-player {
+    margin-top: 20px;
+  }
+  

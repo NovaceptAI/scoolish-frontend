@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .digital-debate-platform {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .debate-topic-section, .add-argument-section {
+    margin-bottom: 30px;
+  }
+  
+  .debate-topic-section input, .add-argument-section textarea {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-argument-section textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .side-selection {
+    margin: 10px 0;
+  }
+  
+  .side-selection label {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  .add-argument-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-argument-section button:hover {
+    background-color: #45a049;
+  }
+  
+  .debate-section {
+    margin-bottom: 30px;
+  }
+  
+  .debate-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .arguments {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .arguments-for, .arguments-against {
+    width: 45%;
+    background-color: #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .argument-item {
+    margin-bottom: 15px;
+  }
+  
+  .argument-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .argument-item button {
+    padding: 5px 10px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .argument-item button:hover {
+    background-color: #e64a19;
+  }
+  
+  .argument-item span {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .fact-check-section {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffeeba;
+    margin-bottom: 30px;
+  }
+  
+  .fact-check-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .fact-check-section p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
