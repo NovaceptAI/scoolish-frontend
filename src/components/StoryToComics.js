@@ -5,12 +5,39 @@ function StoryToComics() {
     const [story, setStory] = useState('');
     const [prompt, setPrompt] = useState('');
     const [keyword, setKeyword] = useState('');
+    const [responseMessage, setResponseMessage] = useState('');
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Handle story submission (send to API or process the story)
-        console.log('Story Submitted:', { prompt, keyword, story });
-        alert('Story submitted successfully!');
+        // Create the data object
+        const storyData = {
+            story_text: story,
+            prompt: prompt,
+            keyword: keyword
+        };
+
+        try {
+            // Send data to the backend
+            const response = await fetch('/story-to-comics', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(storyData)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                setResponseMessage('Story successfully converted to comic format!');
+                console.log('Success:', result);
+            } else {
+                setResponseMessage('Error: ' + (result.error || 'Unable to convert story.'));
+            }
+
+        } catch (error) {
+            setResponseMessage('Error: ' + error.message);
+        }
     };
 
     return (
@@ -58,6 +85,9 @@ function StoryToComics() {
                     </div>
 
                     <button type="submit" className="submit-btn">Convert to Comics</button>
+
+                    {/* Display response message */}
+                    {responseMessage && <p className="response-message">{responseMessage}</p>}
                 </form>
             </main>
         </div>

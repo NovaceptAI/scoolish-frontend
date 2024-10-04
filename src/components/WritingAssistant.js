@@ -68,7 +68,7 @@ const WritingAssistantPage = () => {
             </div>
 
             {/* Buttons for Generating Outline, Thesis, and Suggestions */}
-            <div className="tools-section-assistant">
+            <div >
                 <button onClick={handleGenerateOutline}>Generate Outline</button>
                 <button onClick={handleThesisHelper}>Thesis Statement Helper</button>
                 <button onClick={handleSuggestions}>Get Content Suggestions</button>
